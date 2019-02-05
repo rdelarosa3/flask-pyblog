@@ -5,6 +5,7 @@ from blogsite.config import Config
 from flask import Flask
 #import database
 from flask_sqlalchemy import SQLAlchemy
+#running migrations
 from flask_migrate import Migrate
 #creates encrypted password 
 from flask_bcrypt import Bcrypt
@@ -17,6 +18,7 @@ db = SQLAlchemy()
 #Encrypted Password
 bcrypt = Bcrypt()
 migrate = Migrate()
+
 #login manager customization
 login_manager = LoginManager()
 login_manager.login_view = 'users.login'
