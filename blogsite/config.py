@@ -3,7 +3,7 @@ import os
 class Config():
     #common keys
     SECRET_KEY = os.environ.get('SECRET_KEY') or os.urandom(32)
-    SQLALCHEMY_DATABASE_URI = 'postgres://localhost:5432/blogsite'
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     #aws setup
     S3_KEY = os.environ['S3_KEY']
