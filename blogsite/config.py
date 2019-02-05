@@ -34,3 +34,4 @@ class DevelopmentConfig(Config):
 
 class TestingConfig(Config):
     TESTING = True
+DATABASE_URL
