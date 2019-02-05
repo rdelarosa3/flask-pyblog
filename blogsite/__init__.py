@@ -29,7 +29,7 @@ def create_app(config_class=Config):
 	#set the app variable to Flask
 	app = Flask(__name__)
 	#Make sure config file is created with config class
-	app.config.from_object(os.environ['APP_SETTINGS'])
+	app.config.from_object(os.environ.get('APP_SETTINGS'))
 
 	#app extensions
 	#***************************
