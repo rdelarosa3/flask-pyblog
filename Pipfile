@@ -7,6 +7,19 @@ verify_ssl = true
 
 [packages]
 request = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+flask-wtf = "*"
+flask-bcrypt = "*"
+flask-login = "*"
+flask-mail = "*"
+pillow = "*"
+psycopg2 = "*"
+python-dotenv = "*"
+flask-migrate = "*"
+boto3 = "*"
+botocore = "*"
+werkzeug = "*"
 
 [requires]
 python_version = "3.7"
